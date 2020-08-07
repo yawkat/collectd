@@ -850,6 +850,12 @@ contextswitch_la_LIBADD += -lperfstat
 endif
 endif
 
+if BUILD_PLUGIN_CORSAIR_RMI
+pkglib_LTLIBRARIES += corsair_rmi.la
+corsair_rmi_la_SOURCES = src/corsair_rmi.c
+corsair_rmi_la_LDFLAGS = $(PLUGIN_LDFLAGS)
+endif
+
 if BUILD_PLUGIN_CPU
 pkglib_LTLIBRARIES += cpu.la
 cpu_la_SOURCES = src/cpu.c

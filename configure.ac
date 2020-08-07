@@ -6595,6 +6595,7 @@ plugin_cgroups="no"
 plugin_connectivity="no"
 plugin_conntrack="no"
 plugin_contextswitch="no"
+plugin_corsair_rmi="no"
 plugin_cpu="no"
 plugin_cpufreq="no"
 plugin_cpusleep="no"
@@ -6672,6 +6673,7 @@ if test "x$ac_system" = "xLinux"; then
   plugin_cgroups="yes"
   plugin_conntrack="yes"
   plugin_contextswitch="yes"
+  plugin_corsair_rmi="yes"
   plugin_cpu="yes"
   plugin_cpufreq="yes"
   plugin_disk="yes"
@@ -7051,6 +7053,7 @@ AC_PLUGIN([check_uptime],        [yes],                       [Notify about upti
 AC_PLUGIN([connectivity],        [$plugin_connectivity],      [Network interface up/down events])
 AC_PLUGIN([conntrack],           [$plugin_conntrack],         [nf_conntrack statistics])
 AC_PLUGIN([contextswitch],       [$plugin_contextswitch],     [context switch statistics])
+AC_PLUGIN([corsair_rmi],         [$plugin_corsair_rmi],       [Corsair RMi PSU statistics])
 AC_PLUGIN([cpu],                 [$plugin_cpu],               [CPU usage statistics])
 AC_PLUGIN([cpufreq],             [$plugin_cpufreq],           [CPU frequency statistics])
 AC_PLUGIN([cpusleep],            [$plugin_cpusleep],          [CPU sleep statistics])
